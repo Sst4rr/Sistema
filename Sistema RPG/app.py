@@ -1,8 +1,5 @@
 import tkinter as tk
-from tkinter import ttk
 import json
-import os
-
 
 
 #função para abrir ficha já existente
@@ -53,36 +50,18 @@ janela = tk.Tk()
 janela.title("Sistema de RPG - Fichas")
 janela.geometry("800x600")
 #texto da janela
-lab = tk.Label(janela, text="Personagens", font=("Times New Roman", 20, "bold"))
-lab.pack()
-
-#Entry para criar nova ficha
-entry_nova_ficha = ttk.Entry(janela)
-entry_nova_ficha.pack()
-
-#botão para criar nova ficha
-botao_nova_ficha = ttk.Button(janela, text="Criar Nova Ficha", command=criar_nova_ficha)
-botao_nova_ficha.pack()
-
-#Label para exibir resultado da criação
-label_resultado = ttk.Label(janela, text="")
-label_resultado.pack()
-
-#listbox para exibir fichas existentes
-listbox_fichas = tk.Listbox(janela)
-listbox_fichas.pack()
-
-#botão para abrir ficha selecionada
-botao_abrir_ficha = ttk.Button(janela, text="Abrir Ficha", command=abrir_ficha_selecionada)
-botao_abrir_ficha.pack()
-
-
-
-
-
+lab = tk.Label(janela, text="Personagens", font=("Times New Roman 20 bold",26))
 # lab.grid(row=0, column=0, columnspan=2, sticky="ew")
 # entry_nome = tk.Entry(janela)
 # entry_nome.grid(row=0, column=3, columnspan=2, sticky="ew")
+
+
+
+
+
+
+
+
 
 
 
